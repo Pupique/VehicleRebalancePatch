@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>9</fuelConsumptionRate>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/vehicleStats/MoveSpeed
+    </xpath>
+		<value>
+			<MoveSpeed>18</MoveSpeed>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/properties/worldSpeedMultiplier
+    </xpath>
+		<value>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/properties/winterSpeedMultiplier
+    </xpath>
+		<value>
+			<winterSpeedMultiplier>2.5</winterSpeedMultiplier>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/properties/offRoadMultiplier
+    </xpath>
+		<value>
+			<offRoadMultiplier>1.1</offRoadMultiplier>
+		</value>
+	</Operation>
+
+</Patch>

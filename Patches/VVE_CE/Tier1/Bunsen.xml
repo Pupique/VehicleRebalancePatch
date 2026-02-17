@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Armor -->
+   
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>32</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="FrontArmorPlating"]/armor</xpath>
+	</Operation>
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="LeftArmorPlating"]/armor</xpath>
+	</Operation>
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="RightArmorPlating"]/armor</xpath>
+	</Operation>
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="BackArmorPlating"]/armor</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Engine"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Chemtank"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="LeftTrack"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>20</ArmorRating_Blunt>
+				<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="RightTrack"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>20</ArmorRating_Blunt>
+				<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Gearbox"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Dashboard"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="SteeringApparatus"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Alternator"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="FrontLeftDriveSprocket"]/health</xpath>
+		<value>
+			<health>50</health>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="FrontRightDriveSprocket"]/health</xpath>
+		<value>
+			<health>50</health>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="BackLeftDriveSprocket"]/health</xpath>
+		<value>
+			<health>50</health>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="BackRightDriveSprocket"]/health</xpath>
+		<value>
+			<health>50</health>
+		</value>
+	</Operation>
+
+</Patch>

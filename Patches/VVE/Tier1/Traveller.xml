@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>27</fuelConsumptionRate>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/vehicleStats/MoveSpeed
+    </xpath>
+		<value>
+			<MoveSpeed>15</MoveSpeed>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/properties
+    </xpath>
+		<value>
+			<offRoadMultiplier>1.8</offRoadMultiplier>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+		</value>
+	</Operation>
+
+  <!-- Cargo Capacity -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/vehicleStats/CargoCapacity
+    </xpath>
+		<value>
+			<CargoCapacity>165</CargoCapacity>
+		</value>
+	</Operation>
+
+</Patch>

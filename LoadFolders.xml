@@ -1,0 +1,9 @@
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<li IfModActive="OskarPotocki.VanillaVehiclesExpanded">Patches/VVE</li>
+		<li IfModActive="OskarPotocki.VanillaVehiclesExpanded">
+			<li IfModActive="CETeam.CombatExtended">Patches/VVE_CE</li>
+		</li>
+	</v1.6>
+</loadFolders>

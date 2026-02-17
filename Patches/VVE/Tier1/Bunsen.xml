@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>42</fuelConsumptionRate>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionWorldMultiplier
+    </xpath>
+		<value>
+			<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/properties
+    </xpath>
+		<value>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+			<offRoadMultiplier>1.4</offRoadMultiplier>
+		</value>
+	</Operation> 
+</Patch>

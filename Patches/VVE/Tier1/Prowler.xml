@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>12</fuelConsumptionRate>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+	<Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/properties
+    </xpath>
+		<value>
+			<winterSpeedMultiplier>1.4</winterSpeedMultiplier>
+			<offRoadMultiplier>1.2</offRoadMultiplier>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+		</value>
+	</Operation>
+
+  <!-- Cargo Capacity -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/vehicleStats/CargoCapacity
+    </xpath>
+		<value>
+			<CargoCapacity>120</CargoCapacity>
+		</value>
+	</Operation>
+
+</Patch>

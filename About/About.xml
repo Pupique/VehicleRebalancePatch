@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Vehicle Rebalance Patch</name>
+	<author>Pupique</author>
+	<url>https://github.com/Pupique/VehicleRebalancePatch</url>
+	<description>
+
+		</description>
+	<modIconPath IgnoreIfNoMatchingField="True"></modIconPath>
+	<supportedVersions>
+		<li>1.6</li>		
+	</supportedVersions>
+	<packageId>Pupique.VehicleRebalancePatch</packageId>
+	<modDependencies>
+	</modDependencies>
+	<loadAfter>
+		<li>CETeam.CombatExtended</li>
+		<li>OskarPotocki.VanillaVehiclesExpanded</li>
+	</loadAfter>
+</ModMetaData>

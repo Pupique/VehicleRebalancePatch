@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>25</fuelConsumptionRate>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionWorldMultiplier
+    </xpath>
+		<value>
+			<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelCapacity
+    </xpath>
+		<value>
+			<fuelCapacity>140</fuelCapacity>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/vehicleStats/MoveSpeed
+    </xpath>
+		<value>
+			<MoveSpeed>12.5</MoveSpeed>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/properties
+    </xpath>
+		<value>
+			<offRoadMultiplier>1.3</offRoadMultiplier>
+			<winterSpeedMultiplier>1.7</winterSpeedMultiplier>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+		</value>
+	</Operation>
+
+</Patch>

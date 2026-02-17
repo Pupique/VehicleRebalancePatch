@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+    <value>
+      <fuelConsumptionRate>29</fuelConsumptionRate>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelCapacity
+    </xpath>
+    <value>
+      <fuelCapacity>150</fuelCapacity>
+    </value>
+  </Operation>
+
+  <!-- Speed -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/vehicleStats/MoveSpeed
+    </xpath>
+    <value>
+      <MoveSpeed>9.6</MoveSpeed>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/properties
+    </xpath>
+    <value>
+      <offRoadMultiplier>1.7</offRoadMultiplier>
+      <worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+    </value>
+  </Operation>
+
+  <!-- Cargo Capacity -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/vehicleStats/CargoCapacity
+    </xpath>
+    <value>
+      <CargoCapacity>200</CargoCapacity>
+    </value>
+  </Operation>
+
+</Patch>

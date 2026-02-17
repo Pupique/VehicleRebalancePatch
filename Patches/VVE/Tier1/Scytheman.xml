@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>35</fuelConsumptionRate>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelCapacity
+    </xpath>
+		<value>
+			<fuelCapacity>90</fuelCapacity>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/vehicleStats/MoveSpeed
+    </xpath>
+		<value>
+			<MoveSpeed>6.1</MoveSpeed>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/properties/winterCostMultiplier
+    </xpath>
+		<value>
+			<winterCostMultiplier>1.8</winterCostMultiplier>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/properties
+    </xpath>
+		<value>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+			<offRoadMultiplier>1.4</offRoadMultiplier>
+		</value>
+	</Operation> 
+</Patch>
