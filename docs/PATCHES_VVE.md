@@ -28,7 +28,6 @@ This being a tank that's supposed to reminisce a Medium or even a Light Anti-Per
 | CE - Sprocket Health | 20 | 50 | +150% |
 | Fuel Consumption | 29.5 | 42 | +42% |
 | World Map Fuel Consumption | 0.8x | 1x | +25% |
-| Fuel Capacity | 120 | 75[^2] | -38% |
 | World Map Speed | 1x | 1.1x | +10% |
 | Offroad Penalty | 1x | 1.4x | +40% |
 
