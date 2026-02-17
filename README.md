@@ -29,10 +29,10 @@ Additionally, the fuel capacity of many vehicles was increased not only to adapt
 ### Disclaimer
 
 As of now, the only mod packs that have been patched are:
-* Vanilla Vehicles Expanded (https://github.com/Vanilla-Expanded/VanillaVehiclesExpanded)[see changes](docs/PATCHES_VVE.md);
-* Vanilla Vehicles Expanded - Tier 3 (https://github.com/Vanilla-Expanded/VanillaVehiclesExpanded-Tier3)[see changes](docs/PATCHES_VVET3.md);
-* Alpha Vehicles - Neolithic (https://github.com/juanosarg/AlphaVehicles-Neolithic)[see changes](docs/PATCHES_AVN.md);
-* Alpha Vehicles - Age of Sail (https://github.com/juanosarg/AlphaVehicles-AgeOfSail)[see changes](docs/PATCHES_AVAOS.md).
+* Vanilla Vehicles Expanded (https://github.com/Vanilla-Expanded/VanillaVehiclesExpanded) [see changes](docs/PATCHES_VVE.md);
+* Vanilla Vehicles Expanded - Tier 3 (https://github.com/Vanilla-Expanded/VanillaVehiclesExpanded-Tier3) [see changes](docs/PATCHES_VVET3.md);
+* Alpha Vehicles - Neolithic (https://github.com/juanosarg/AlphaVehicles-Neolithic) [see changes](docs/PATCHES_AVN.md);
+* Alpha Vehicles - Age of Sail (https://github.com/juanosarg/AlphaVehicles-AgeOfSail) [see changes](docs/PATCHES_AVAOS.md).
 
 I patched these mods because they are the ones I use recurrently in my playthroughs and therefore are the ones I feel more qualified to make adjustments to.
 
