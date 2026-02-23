@@ -24,12 +24,11 @@ This being a tank that's supposed to reminisce a Medium or even a Light Anti-Per
 | Variable | Old Value | New Value | % Change |
 | --- | --- | --- | --- |
 | CE - Base Armor | 5/10 | 16/32[^1] | +220% |
+| CE - Rear Armor | 5/10 | 10/20 | +100% |
 | CE - Track Armor | 5/10 | 10/20 | +100% |
 | CE - Sprocket Health | 20 | 50 | +150% |
 | Fuel Consumption | 29.5 | 42 | +42% |
 | World Map Fuel Consumption | 0.8x | 1x | +25% |
-| Fuel Capacity | 120 | 75[^2] | -38% |
-| World Map Speed | 1x | 1.1x | +10% |
 | Offroad Penalty | 1x | 1.4x | +40% |
 
 ### Dirtbike
@@ -142,9 +141,27 @@ Its cargo capacity was reduced since a muscle car half of the Mule's capacity is
 | Fuel Consumption | 22.5 | 27 | +20% |
 | Movement Speed | 12.8 | 15 | +17% |
 | Offroad Penalty | 1.2x | 1.8x | +50% |
-| Cargo Capacity | 300 | 165 | -45% |
+| Cargo Capacity | 300 | 140 | -45% |
 
 ## Tier 2
+
+### Bulldog
+
+Bulldog resembles a medium tank with a decent main gun, apt not only for frontlining but also for battling opposing heavy machinery. Even though it's front armor is only slightly stronger than the Roadkill's, the Bulldog is faster, more fuel-efficient and has a more balanced armor set, made not only to resist incoming shots but also to wear down more slowly when put through pressure.
+
+| Variable | Old Value | New Value | % Change |
+| --- | --- | --- | --- |
+| CE - Base Armor | 16/32 | 35/70 | +118% |
+| CE - Front Armor | 16/32 | 40/80 | +150% |
+| CE - Track Armor | 16/32 | 20/40 | +25% |
+| CE - Rear Armor | 16/32 | 25/50 | +56% |
+| CE - Internal Components Armor | 16/32 | 7/14 | -56% |
+| CE - Sprocket Health | 25 | 75 | +100% |
+| Fuel Consumption | 24 | 43 | +79% |
+| Fuel Capacity | 75 | 165 | +120% |
+| Winter Speed Penalty | 2x | 1.8x | -10% |
+| Offroad Penalty | 1x | 1.4x | +40% |
+| Cargo Capacity | 300 | 215 | -28% |
 
 ### Charley
 
@@ -169,8 +186,39 @@ It is a pickup truck that should succeed the Mule but, much like with Charley, I
 | Fuel Consumption | 20.5 | 25 | +22% |
 | World Map Fuel Consumption | 0.5x | 1x | +100% |
 | Fuel Capacity | 120 | 140 | +17% |
-| Winter Speed Penalty | 2x | 1.7x | -15% |
 | Movement Speed | 14.8 | 12.5 | -16% |
+| Winter Speed Penalty | 2x | 1.7x | -15% |
 | Offroad Penalty | 1x | 1.3x | +30% |
+
+### Tango
+
+Being an excellent option against infantry and light vehicles, the Tango sports an autocannon turret with a reasonable, evened-out armor. Despite being slower than the Highwayman, it is more steady and fares better in both winter and offroad environments.
+
+| Variable | Old Value | New Value | % Change |
+| --- | --- | --- | --- |
+| CE - Base Armor | 8/16 | 26/52 | +225% |
+| CE - Track Armor | 8/16 | 15/30 | +88% |
+| CE - Rear Armor | 8/16 | 15/30 | +88% |
+| CE - Internal Components Armor | 8/16 | 5/10 | -38% |
+| CE - Sprocket Health | 25 | 55 | +120% |
+| Fuel Consumption | 28 | 41 | +46% |
+| Fuel Capacity | 75 | 150 | +100% |
+| Movement Speed | 6.4 | 8.2 | +28% |
+| Winter Speed Penalty | 2x | 1.5x | -25% |
+| Offroad Penalty | 1x | 1.3x | +30% |
+| Cargo Capacity | 260 | 150 | -42% |
+
+### Wagon
+
+It's meant to be an old-school family car without much else of note. Although it doesn't excel in speed when compared to the Traveller, it has a much better fuel efficiency, room for more passengers and more cargo space whilst having a better offroad performance.
+
+| Variable | Old Value | New Value | % Change |
+| --- | --- | --- | --- |
+| Fuel Consumption | 18.5 | 19 | +3% |
+| World Map Fuel Consumption | 0.5x | 1x | +100% |
+| Movement Speed | 12.4 | 13.6 | +10% |
+| Winter Speed Penalty | 3.2x | 2.1x | -34% |
+| Offroad Penalty | 1x | 1.6x | +60% |
+| Cargo Capacity | 320 | 230 | -28% |
 
 [^1]: The Bunsen had multiple armor settings for many of its parts, so everything was standardized to the same value with the exception of its internal components, which retained their original values.

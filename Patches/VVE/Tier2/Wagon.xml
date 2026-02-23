@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Fuel Consumption -->
+  
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionRate
+    </xpath>
+		<value>
+			<fuelConsumptionRate>19</fuelConsumptionRate>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]
+      /comps/li[@Class="Vehicles.CompProperties_FueledTravel"]
+      /fuelConsumptionWorldMultiplier
+    </xpath>
+		<value>
+			<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+		</value>
+	</Operation>
+
+  <!-- Speed -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/vehicleStats/MoveSpeed
+    </xpath>
+		<value>
+			<MoveSpeed>13.6</MoveSpeed>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/properties
+    </xpath>
+		<value>
+			<winterSpeedMultiplier>2.1</winterSpeedMultiplier>
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+			<offRoadMultiplier>1.6</offRoadMultiplier>
+		</value>
+	</Operation>
+
+  <!-- Cargo Capacity -->
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/vehicleStats/CargoCapacity
+    </xpath>
+		<value>
+			<CargoCapacity>230</CargoCapacity>
+		</value>
+	</Operation>
+
+</Patch>

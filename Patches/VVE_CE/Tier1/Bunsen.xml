@@ -58,9 +58,18 @@
 			</armor>
 		</value>
 	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="RightTrack"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>20</ArmorRating_Blunt>
+				<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="BackArmorPlating"]</xpath>
 		<value>
 			<armor>
 				<ArmorRating_Blunt>20</ArmorRating_Blunt>

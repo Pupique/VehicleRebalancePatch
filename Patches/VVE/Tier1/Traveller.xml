@@ -41,7 +41,7 @@
       /Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/vehicleStats/CargoCapacity
     </xpath>
 		<value>
-			<CargoCapacity>165</CargoCapacity>
+			<CargoCapacity>140</CargoCapacity>
 		</value>
 	</Operation>
 

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Armor -->
+   
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>70</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>35</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="LeftArmorPlating"]/armor</xpath>
+	</Operation>
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="RightArmorPlating"]/armor</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="FrontArmorPlating"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>80</ArmorRating_Blunt>
+				<ArmorRating_Sharp>40</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="LeftTrack"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>40</ArmorRating_Blunt>
+				<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="RightTrack"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>40</ArmorRating_Blunt>
+				<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="BackArmorPlating"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>50</ArmorRating_Blunt>
+				<ArmorRating_Sharp>25</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="Engine"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>14</ArmorRating_Blunt>
+				<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="Chemtank"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>14</ArmorRating_Blunt>
+				<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="Gearbox"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>14</ArmorRating_Blunt>
+				<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="Dashboard"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>14</ArmorRating_Blunt>
+				<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="SteeringApparatus"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>14</ArmorRating_Blunt>
+				<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="Alternator"]</xpath>
+		<value>
+			<armor>
+				<ArmorRating_Blunt>14</ArmorRating_Blunt>
+				<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			</armor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="FrontLeftDriveSprocket"]/health</xpath>
+		<value>
+			<health>75</health>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="FrontRightDriveSprocket"]/health</xpath>
+		<value>
+			<health>75</health>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="BackLeftDriveSprocket"]/health</xpath>
+		<value>
+			<health>75</health>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/components/li[key="BackRightDriveSprocket"]/health</xpath>
+		<value>
+			<health>75</health>
+		</value>
+	</Operation>
+
+</Patch>
